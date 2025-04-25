@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Bi K Irie, IS117-004, Spring 2024 -->
+<html lang="en">
+
+<head>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <title>Bi Dev Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="contact-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bi Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="skill.html">Skill</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4 fw-bold text-white">Have Questions? Message Me!</h1>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="index.html" class="btn btn-primary btn-lg px-4">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="page-content-wrapper" class="header" style="background:#fff;">
+        <!-- Contact Info (Box, 2 Columns) -->
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="p-4 rounded shadow-sm mb-4" style="background:#f9f9f9;">
+                        <div class="row">
+                            <!-- Address/Info Left -->
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <div class="mb-3">
+                                    <p class="fw-bold mb-1"><i class="bi bi-map-pointer"></i> My Address</p>
+                                    <span>Newark , NJ 07106</span>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fw-bold mb-1"><i class="bi bi-phone"></i> My Phone Number</p>
+                                    <a href="tel:+0123456789">+0123 456 789 / +0123 456 790</a>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-1"><i class="bi bi-paper-plane"></i> E-Mail Address</p>
+                                    <a href="mailto:hello@break.com">bki@njit.edu</a>
+                                </div>
+                            </div>
+                            <!-- About/Text Right -->
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-3"><span class="fs-4 fw-bold navbar-brand">Bi Dev Portfolio</span></div>
+                                <p class="text-justify">
+                                    Welcome to my BI Dev Portfolio — a collection of projects that merge business
+                                    intelligence with modern web development and design. Using tools like HTML, CSS,
+                                    SASS, JavaScript, and PHP, I build responsive, data-driven web applications and
+                                    dashboards. 
+                                </p>
+                                <p class="text-justify">
+                                    With the Adobe Creative Suite, I craft clean, user-friendly interfaces
+                                    that enhance data visualization and storytelling. This portfolio showcases my
+                                    ability to present complex data clearly and interactively, empowering users to make
+                                    informed business decisions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="container-area py-5">
+                <div class="container">
+
+                    <!-- Contact Form -->
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-12 col-lg-10">
+                            <div class="p-4 rounded shadow-sm" style="background:#fff;">
+                                <form id="contactForm" data-toggle="validator">
+                                    <div class="row">
+                                        <!-- Left: Name, Email, Subject -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-3" id="name"
+                                                    placeholder="FULL NAME" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-3" id="email"
+                                                    placeholder="EMAIL" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-3" id="subject"
+                                                    placeholder="SUBJECT">
+                                            </div>
+                                        </div>
+                                        <!-- Right: Message, Submit -->
+                                        <div class="col-md-6 d-flex flex-column">
+                                            <div class="form-group flex-grow-1 d-flex flex-column">
+                                                <textarea id="message" class="form-control mb-3 flex-grow-1" rows="6"
+                                                    placeholder="MESSAGE" required></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" id="form-submit"
+                                                    class="btn btn-primary btn-md btn-form-submit mt-2">Submit</button>
+                                            </div>
+                                            <div id="msgSubmit" class="h3 text-center d-none"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-12 col-lg-10">
+                            <div class="rounded shadow-sm overflow-hidden" style="background:#e9ecef; height: 75vh;">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019160576974!2d-122.4194151846816!3d37.77492927975943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e2b1b0d%3A0x7d0f8c3b0d1c2d7!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1614097742412!5m2!1sen!2sus"
+                                    width="100%" height="100%" style="border:0; min-height:350px;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- / content -->
+
+                    <!-- call to action -->
+                    <div id="call-to-action" class="stackeds bg-light" data-section="call-to-action">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="cta-content"><span class="cta-text">Interested in Working Together? Let’s
+                                            Connect!<a href="#contact"
+                                                class="btn btn-primary sm cta-right page-scroll">CONTACT US</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- / container -->
+                    </div>
+                    <!-- / call to action -->
+
+                    <!-- Footer area -->
+                    <footer class="footer-bg">
+                        <div class="footer-area">
+                            <div class="container">
+                                <div class="footer-info text-center">
+                                    <div class="logo logo-style">
+                                        <a href="index.html">Bi Dev</a>
+                                    </div>
+                                    <div class="social-icon mt-3">
+                                        <a href="index.html"><i class="fa fa-facebook"></i></a>
+                                        <a href="index.html"><i class="fa fa-twitter"></i></a>
+                                        <a href="index.html"><i class="fa fa-skype"></i></a>
+                                        <a href="index.html"><i class="fa fa-google-plus"></i></a>
+                                        <a href="index.html"><i class="fa fa-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom gray-bg pt-3 pb-3">
+                            <div class="container">
+                                <div class="copyright text-center">
+                                    <p class="mb-0">&copy; 2025 <a href="https://bki@njit.edu/" target="_blank">Bi
+                                            Dev</a>, All
+                                        Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- / Footer area -->
+
+
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
