@@ -321,27 +321,27 @@
  /* carrousel image */
 
 body.home-page .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
                 url('image/banner.jpg') center/cover;
     color: white;
 }
 body.skill-page .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+  background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
               url('image/Skill_banner.jpg') center/cover;
   color: white;
 }
 body.contact-page .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+  background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
               url('image/contact_banner.jpg') center/cover;
   color: white;
 }
 body.project-page .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+  background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
               url('image/project_banner.jpg') center/cover;
   color: white;
 }
 body.about_me-page .hero-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+  background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
               url('image/about-banner.jpg') center/cover;
   color: white;
 }
@@ -357,7 +357,7 @@ body.about_me-page .hero-section {
 .card {
     transition: transform 0.3s;
 }
-.card:hover {
+.card: hover {
     transform: translateY(-5px);
 }
 
