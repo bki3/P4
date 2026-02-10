@@ -357,7 +357,7 @@ body.about_me-page .hero-section {
 .card {
     transition: transform 0.3s;
 }
-.card: hover {
+.card:hover {  /* ✅ CORRECT - No space */
     transform: translateY(-5px);
 }
 
