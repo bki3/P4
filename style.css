@@ -219,11 +219,20 @@
  /*=======================
    Footer
   =======================*/
- .footer footer-bg {
-   background: #fff;
-   border-top: 0 solid #272b2b;
-   padding: 39px 0 0;
+ .footer {
+   background: #f9f9f9;
+   margin-top: 60px;
+   padding-top: 40px;
  }
+ 
+ .footer-area {
+   padding: 30px 0;
+ }
+ 
+ .footer-bg {
+   background: #f9f9f9;
+ }
+ 
  .footer-info .logo a {
    color: #272b2b;
    font-family: Montserrat, sans-serif;
@@ -231,6 +240,7 @@
    font-weight: 700;
    text-transform: uppercase;
  }
+ 
  .social-icon a {
    background:#06202B;
    border: 1px solid #06202B;
@@ -244,17 +254,22 @@
    width: 35px;
    transition: all 0.2s;
  }
+ 
  .social-icon a:hover {
    background: #6ba9a9;
    border-color: #6ba9a9;
    color: #fff;
  }
+ 
  .footer-bottom {
    margin-top: 33px;
    background: #f9f9f9;
-   padding: 5px 0;
+   padding: 20px 0;
  }
- .footer-bottom p { margin: 0; }
+ 
+ .footer-bottom p { 
+   margin: 0; 
+ }
  
  /*=======================
   7. Responsive Styles
