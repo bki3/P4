@@ -424,8 +424,14 @@ body.about_me-page .hero-section {
   =======================*/
 /* Make most sections light gray */
 body,
+body.skill-page,
+body.contact-page,
+body.project-page,
+body.about_me-page,
 section.bg-light,
 #about-freelancer,
+#about,
+#about .container,
 .footer,
 .footer-bottom {
     background: #f9f9f9 !important;
