@@ -422,7 +422,7 @@ body.about_me-page .hero-section {
 /*=======================
   Consistent Background - Light Gray with White CTA
   =======================*/
-/* Make most sections light gray */
+/* Make most sections light gray - Override ALL inline styles */
 body,
 body.skill-page,
 body.contact-page,
@@ -432,7 +432,16 @@ section.bg-light,
 #about-freelancer,
 #about,
 #about .container,
+#page-content-wrapper,
+#page-content-wrapper.header,
+.container-area,
+main.container,
+.card,
+.card-body,
+.list-group-item,
 .footer,
+.footer-area,
+.footer-bg,
 .footer-bottom {
     background: #f9f9f9 !important;
 }
@@ -440,6 +449,11 @@ section.bg-light,
 /* Keep Call to Action white - stands out */
 #call-to-action {
     background-color: #ffffff !important;
+}
+
+/* Keep contact form white */
+#contactForm .p-4 {
+    background: #ffffff !important;
 }
 /* video end*/
   
