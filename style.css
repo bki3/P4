@@ -173,43 +173,48 @@
   .call-to-action a {
     margin-top: 12px;
   }
- /*=======================
+/*=======================
  10. Call to Action area
  ========================*/
 #call-to-action {
     background-color: white;
-    padding: 50px 0;
-  }
-  .stacked {
+    padding: 20px 0;
+}
+
+.stacked {
     margin-top: -51px !important;
-  }
-  #call-to-action.stacked {
+}
+
+#call-to-action.stacked {
     background: #fff none repeat scroll 0 0;
     margin-top: 0;
-    padding: 30px 0;
-  }
-  .cta-text {
+    padding: 15px 0;
+}
+
+.cta-text {
     font-family: "Montserrat",sans-serif;
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 60px;
-    padding: 30px 0;
-  }
-  .cta-right {
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+.cta-right {
     float: right;
-  }
-  .cta-content {
-    padding: 30px 0;
-  }
-  
-  #call-to-action p {
+}
+
+.cta-content {
+    padding: 10px 0;
+}
+
+#call-to-action p {
     margin-bottom: 0;
-  }
-  
-  .cta-content .btn {
+}
+
+.cta-content .btn {
     margin-top: 9px;
-  }
+}
 
  /*=======================
    Footer
