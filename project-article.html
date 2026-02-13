@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Bi K Irie, IS117-004, Spring 2024 -->
+<html lang="en">
+
+<head>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <title>Project Article - Bi Dev Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body class="article-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bi Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="skill.html">Skill</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <section class="article-header py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="project.html">Projects</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-title">Loading...</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-3" id="project-title">Loading...</h1>
+                    <p class="lead text-muted mb-4" id="project-subtitle">Loading...</p>
+                    <div class="article-meta d-flex flex-wrap gap-3 mb-4" id="project-meta">
+                        <!-- JavaScript fills this -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-content py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <!-- Featured Image -->
+                    <div class="featured-image mb-5">
+                        <img id="featured-img" src="image/placeholder.jpg" alt="Project Image" class="img-fluid rounded shadow">
+                        <p class="text-muted text-center mt-2 small">Figure 1: Project screenshot</p>
+                    </div>
+
+                    <!-- Project Overview -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Project Overview</h2>
+                        <div id="project-overview">
+                            <!-- JavaScript fills this -->
+                        </div>
+                    </section>
+
+                    <!-- Key Features -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Key Features</h2>
+                        <ul class="feature-list" id="feature-list">
+                            <!-- JavaScript fills this -->
+                        </ul>
+                    </section>
+
+                    <!-- Technologies Used -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Technologies Used</h2>
+                        <div class="row g-3" id="tech-stack">
+                            <!-- JavaScript fills this -->
+                        </div>
+                    </section>
+
+                    <!-- Read More Section (Collapsible) -->
+                    <section class="mb-5">
+                        <div class="read-more-section">
+                            <div class="collapse" id="moreContent">
+                                <h2 class="h3 fw-bold mb-3">Development Process</h2>
+
+                                <h3 class="h4 fw-bold mb-3">Planning & Design</h3>
+                                <p id="content-planning">Loading...</p>
+
+                                <h3 class="h4 fw-bold mb-3">Implementation</h3>
+                                <p id="content-implementation">Loading...</p>
+
+                                <h3 class="h4 fw-bold mb-3">Challenges & Solutions</h3>
+                                <p id="content-challenges">Loading...</p>
+
+                                <h3 class="h4 fw-bold mb-3">Results & Impact</h3>
+                                <p id="content-results">Loading...</p>
+                            </div>
+
+                            <!-- Read More Button -->
+                            <div class="text-center my-4">
+                                <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#moreContent" aria-expanded="false" aria-controls="moreContent"
+                                    onclick="toggleReadMore(this)">
+                                    <i class="bi bi-chevron-down"></i> Read More
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Project Links -->
+                    <section class="mb-5">
+                        <h2 class="h3 fw-bold mb-3">Project Links</h2>
+                        <div class="d-flex flex-wrap gap-3" id="project-links">
+                            <!-- JavaScript fills this -->
+                        </div>
+                    </section>
+
+                    <!-- Back to Projects -->
+                    <div class="text-center mb-5">
+                        <a href="project.html" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Back to All Projects
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Call to Action -->
+    <div id="call-to-action" class="stackeds" data-section="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="cta-content"><span class="cta-text">Interested in Working Together? Let's Connect!<a href="contact.html"
+                                class="btn btn-primary sm cta-right page-scroll">CONTACT ME</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer gray-bg">
+        <div class="footer-area">
+            <div class="container">
+                <div class="footer-info text-center">
+                    <div class="logo logo-style">
+                        <a class="navbar-brand" href="index.html">Bi Dev</a>
+                    </div>
+                    <div class="social-icon mt-3">
+                        <a href="index.html"><i class="fa fa-facebook"></i></a>
+                        <a href="index.html"><i class="fa fa-twitter"></i></a>
+                        <a href="index.html"><i class="fa fa-skype"></i></a>
+                        <a href="index.html"><i class="fa fa-google-plus"></i></a>
+                        <a href="index.html"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom gray-bg">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p class="mb-0">&copy; 2025 <a href="mailto:bki@njit.edu">Bi Dev</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Load Project Data -->
+    <script src="js/load-project.js"></script>
+
+</body>
+
+</html>
