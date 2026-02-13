@@ -1,0 +1,108 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "subtitle": "A modern, responsive portfolio showcasing my web development skills",
+      "category": "Web Development",
+      "tags": ["HTML/CSS", "JavaScript", "Bootstrap"],
+      "date": "January 2025",
+      "readTime": "5 min",
+      "featuredImage": "image/project-portfolio.jpg",
+      "overview": [
+        "This portfolio website showcases my journey as a web developer and information systems student at NJIT.",
+        "Built with modern web technologies, it demonstrates my proficiency in front-end development and design."
+      ],
+      "features": [
+        "Responsive design that works on all devices",
+        "Modern and clean user interface",
+        "Optimized performance and fast loading times",
+        "Cross-browser compatibility",
+        "Accessible and user-friendly"
+      ],
+      "technologies": [
+        {
+          "name": "HTML5",
+          "icon": "bi-filetype-html",
+          "color": "text-danger",
+          "description": "Semantic markup structure"
+        },
+        {
+          "name": "CSS3 / Bootstrap",
+          "icon": "bi-filetype-css",
+          "color": "text-primary",
+          "description": "Modern styling and responsive design"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "bi-filetype-js",
+          "color": "text-warning",
+          "description": "Interactive functionality"
+        }
+      ],
+      "detailedContent": {
+        "planning": "I started with wireframes and mockups in Adobe XD, focusing on user experience and clean design principles. The goal was to create a portfolio that not only looks professional but also tells my story as a developer.",
+        "implementation": "Built using Bootstrap 5 framework for responsiveness, with custom CSS for unique styling. Implemented smooth scrolling, hover effects, and optimized images for fast loading times.",
+        "challenges": "Ensuring cross-browser compatibility was challenging, especially for older versions of Safari. I also had to optimize images without losing quality to maintain fast page load speeds.",
+        "results": "Successfully deployed on GitHub Pages with excellent performance metrics. The site loads in under 2 seconds and has received positive feedback from peers and instructors."
+      },
+      "links": {
+        "live": "https://bki3.github.io/P4",
+        "github": "https://github.com/bki3/P4",
+        "download": ""
+      }
+    },
+    {
+      "id": 2,
+      "title": "Task Manager Application",
+      "subtitle": "Efficient task tracking with modern UI/UX design",
+      "category": "Web Application",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "date": "December 2024",
+      "readTime": "7 min",
+      "featuredImage": "image/project-task.jpg",
+      "overview": [
+        "A full-stack task management application built with the MERN stack.",
+        "Features real-time updates and collaborative task sharing capabilities."
+      ],
+      "features": [
+        "Real-time task synchronization",
+        "User authentication and authorization",
+        "Drag-and-drop task organization",
+        "Priority and deadline management",
+        "Team collaboration features"
+      ],
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "bi-code-square",
+          "color": "text-info",
+          "description": "Frontend framework"
+        },
+        {
+          "name": "Node.js",
+          "icon": "bi-server",
+          "color": "text-success",
+          "description": "Backend runtime"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "bi-database",
+          "color": "text-success",
+          "description": "Database"
+        }
+      ],
+      "detailedContent": {
+        "planning": "Researched existing task management tools like Trello and Asana to identify key features users need. Created user personas and user flow diagrams.",
+        "implementation": "Used React hooks for state management and Express.js for RESTful API. Implemented JWT authentication and WebSocket for real-time updates.",
+        "challenges": "Implementing real-time updates using WebSockets was challenging but rewarding. Had to handle connection drops and reconnection logic properly.",
+        "results": "Deployed with high user satisfaction and positive feedback on usability. Successfully handles 100+ concurrent users."
+      },
+      "links": {
+        "live": "",
+        "github": "",
+        "download": ""
+      }
+    }
+  ]
+}
