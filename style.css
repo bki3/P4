@@ -619,7 +619,7 @@ html {
     left: 0;
     right: 0;
     background: #06202B;
-    color: #fff;
+    color: #ffffff !important; /* ✅ FIXED: Explicit white text */
     padding: 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
     z-index: 9999;
@@ -649,6 +649,9 @@ html {
     margin: 0;
     flex: 1;
     min-width: 250px;
+    color: #ffffff !important; /* ✅ FIXED: Force white text on paragraph */
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .cookie-buttons {
@@ -657,29 +660,38 @@ html {
 }
 
 .cookie-buttons .btn {
-    padding: 8px 20px;
+    padding: 10px 24px !important; /* ✅ IMPROVED: Better button size */
     cursor: pointer;
     border: none;
     border-radius: 5px;
     font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .cookie-buttons .btn-primary {
-    background: #6ba9a9;
-    color: #fff;
+    background: #6ba9a9 !important;
+    color: #fff !important;
+    border: 2px solid #6ba9a9 !important;
 }
 
 .cookie-buttons .btn-primary:hover {
-    background: #5a9393;
+    background: #5a9393 !important;
+    border-color: #5a9393 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .cookie-buttons .btn-secondary {
-    background: #444;
-    color: #fff;
+    background: transparent !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
 }
 
 .cookie-buttons .btn-secondary:hover {
-    background: #555;
+    background: rgba(255,255,255,0.1) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Mobile responsive */
@@ -692,6 +704,10 @@ html {
     .cookie-buttons {
         width: 100%;
         justify-content: center;
+    }
+    
+    .cookie-consent-content p {
+        font-size: 14px; /* ✅ IMPROVED: Smaller on mobile */
     }
 }
 /* video end*/
