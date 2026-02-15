@@ -319,7 +319,33 @@
     min-height: 70vh;
   }
 }
- 
+ /* Project Cards Mobile Fix */
+@media (max-width: 767px) {
+  .col-md-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+/* Hero Section Responsive */
+@media (max-width: 767px) {
+  .vh-100 {
+    min-height: 80vh !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .vh-100 {
+    min-height: 70vh !important;
+  }
+}
  /*=======================
   8. Loader (Preloader)
   =======================*/
