@@ -713,7 +713,7 @@ html {
 /* Service Page Styles */
 body.service-page .hero-section {
     background: linear-gradient(rgba(211, 236, 246, 0.7), rgba(1, 81, 116, 0.7)), 
-                url('image/service_banner.jpg') center/cover;
+                url('image/service_banner.webp') center/cover;
     color: white;
 }
 
