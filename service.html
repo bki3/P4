@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Bi K Irie, IS117-004, Spring 2024 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <title>Services - Bi Dev Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body class="service-page">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bi Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="skill.html">Skill</a></li>
+                            <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                            <li><a class="dropdown-item" href="project.html">Project</a></li>
+                            <li><a class="dropdown-item" href="service.html">Services</a></li>
+                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section vh-100 d-flex align-items-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-4 fw-bold text-white">Professional Services & Products</h1>
+                    <p class="lead text-white mb-4">Quality web development services and essential tools for developers</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="#services" class="btn btn-primary btn-lg px-4">View Services</a>
+                        <a href="#products" class="btn btn-outline-light btn-lg px-4">Shop Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Development Services</h2>
+            <div class="row g-4">
+                
+                <!-- Website Development -->
+                <div class="col-md-6">
+                    <div class="card h-100 service-card">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-globe text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Website Development</h3>
+                            <p class="card-text">Professional, responsive websites tailored to your business needs. Built with modern technologies and best practices.</p>
+                            
+                            <h5 class="mt-4 mb-3">Features:</h5>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Fully Responsive Design</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> SEO Optimized</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Fast Loading Speed</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Mobile-First Approach</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Cross-Browser Compatible</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 3 Months Free Support</li>
+                            </ul>
+                            
+                            <div class="pricing mt-4">
+                                <h4 class="text-primary">Starting at $500</h4>
+                                <p class="text-muted">Custom quote based on requirements</p>
+                            </div>
+                            
+                            <a href="contact.html?service=website" class="btn btn-primary w-100 mt-3">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Application Development -->
+                <div class="col-md-6">
+                    <div class="card h-100 service-card">
+                        <div class="card-body p-4">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-code-square text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Web Application Development</h3>
+                            <p class="card-text">Custom web applications with advanced functionality, user authentication, and database integration.</p>
+                            
+                            <h5 class="mt-4 mb-3">Features:</h5>
+                            <ul class="service-features">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Custom Functionality</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> User Authentication</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Database Integration</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> API Development</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Secure & Scalable</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 6 Months Free Support</li>
+                            </ul>
+                            
+                            <div class="pricing mt-4">
+                                <h4 class="text-primary">Starting at $1,500</h4>
+                                <p class="text-muted">Custom quote based on requirements</p>
+                            </div>
+                            
+                            <a href="contact.html?service=webapp" class="btn btn-primary w-100 mt-3">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Developer Products & Books</h2>
+            <div class="row g-4">
+                
+                <!-- Books -->
+                <div class="col-md-6">
+                    <div class="card h-100 product-card">
+                        <div class="card-body p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-book text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Coding & Web Development Books</h3>
+                            <p class="card-text">Curated collection of essential books for learning coding and web development.</p>
+                            
+                            <h5 class="mt-4 mb-3">Available Topics:</h5>
+                            <ul class="product-features">
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> HTML, CSS & JavaScript</li>
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> React & Vue.js</li>
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> Node.js & Backend Development</li>
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> Python Programming</li>
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> Web Design & UX</li>
+                                <li><i class="bi bi-bookmark-fill text-warning"></i> Algorithms & Data Structures</li>
+                            </ul>
+                            
+                            <div class="pricing mt-4">
+                                <h4 class="text-primary">$15 - $60</h4>
+                                <p class="text-muted">Per book (physical or eBook)</p>
+                            </div>
+                            
+                            <a href="contact.html?product=books" class="btn btn-primary w-100 mt-3">Browse Books</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computers -->
+                <div class="col-md-6">
+                    <div class="card h-100 product-card">
+                        <div class="card-body p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-laptop text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Development Computers</h3>
+                            <p class="card-text">Pre-configured computers optimized for coding and web development work.</p>
+                            
+                            <h5 class="mt-4 mb-3">Configurations:</h5>
+                            <ul class="product-features">
+                                <li><i class="bi bi-pc-display text-info"></i> Entry Level: i5, 8GB RAM, 256GB SSD</li>
+                                <li><i class="bi bi-pc-display text-info"></i> Mid Range: i7, 16GB RAM, 512GB SSD</li>
+                                <li><i class="bi bi-pc-display text-info"></i> Pro Level: i9, 32GB RAM, 1TB SSD</li>
+                                <li><i class="bi bi-pc-display text-info"></i> Pre-installed Dev Tools</li>
+                                <li><i class="bi bi-pc-display text-info"></i> 1 Year Warranty</li>
+                                <li><i class="bi bi-pc-display text-info"></i> Free Setup & Configuration</li>
+                            </ul>
+                            
+                            <div class="pricing mt-4">
+                                <h4 class="text-primary">$600 - $2,500</h4>
+                                <p class="text-muted">Based on configuration</p>
+                            </div>
+                            
+                            <a href="contact.html?product=computers" class="btn btn-primary w-100 mt-3">View Options</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Bi Dev?</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="bi bi-award text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">Quality Assured</h5>
+                        <p>High-quality work with attention to detail</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="bi bi-clock-history text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">Timely Delivery</h5>
+                        <p>Projects completed on time, every time</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="bi bi-headset text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">24/7 Support</h5>
+                        <p>Always here to help with your questions</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">Satisfaction Guaranteed</h5>
+                        <p>Money-back guarantee if not satisfied</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div id="call-to-action" class="stackeds" data-section="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="cta-content"><span class="cta-text">Ready to start your project or order products?<a href="contact.html"
+                                class="btn btn-primary sm cta-right page-scroll">CONTACT ME</a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer gray-bg">
+        <div class="footer-area">
+            <div class="container">
+                <div class="footer-info text-center">
+                    <div class="logo logo-style">
+                        <a class="navbar-brand" href="index.html">Bi Dev</a>
+                    </div>
+                    <div class="social-icon mt-3">
+                        <a href="index.html"><i class="fa fa-facebook"></i></a>
+                        <a href="index.html"><i class="fa fa-twitter"></i></a>
+                        <a href="index.html"><i class="fa fa-skype"></i></a>
+                        <a href="index.html"><i class="fa fa-google-plus"></i></a>
+                        <a href="index.html"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom gray-bg pt-3 pb-3">
+            <div class="container">
+                <div class="copyright text-center">
+                    <p class="mb-0">&copy; 2025 <a href="https://bki@njit.com/" target="_blank">Bi Dev</a>, All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-consent-content">
+            <p>🍪 We use cookies to improve your experience. By using this site, you accept our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button onclick="acceptCookies()" class="btn btn-primary btn-sm">Accept</button>
+                <button onclick="declineCookies()" class="btn btn-secondary btn-sm">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent JavaScript -->
+    <script>
+        window.addEventListener('load', function() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieConsent').style.display = 'block';
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'accepted');
+            document.getElementById('cookieConsent').style.display = 'none';
+        }
+
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'declined');
+            document.getElementById('cookieConsent').style.display = 'none';
+        }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
