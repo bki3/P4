@@ -149,68 +149,253 @@
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-5">
+    <!-- E-COMMERCE PRODUCTS SECTION -->
+    <section id="products" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Developer Products & Books</h2>
+            <div class="text-center mb-5">
+                <h2 class="mb-3">📚 Developer Books & Resources</h2>
+                <p class="lead text-muted">Essential reading materials for aspiring and professional developers</p>
+            </div>
+
             <div class="row g-4">
                 
-                <!-- Books -->
-                <div class="col-md-6">
-                    <div class="card h-100 product-card">
-                        <div class="card-body p-4">
-                            <div class="product-icon mb-3">
-                                <i class="bi bi-book text-primary" style="font-size: 3rem;"></i>
+                <!-- Product 1: HTML & CSS Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="product-badge">Bestseller</div>
+                        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="HTML CSS Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <span class="text-muted ms-2">(245)</span>
                             </div>
-                            <h3 class="card-title mb-3">Coding & Web Development Books</h3>
-                            <p class="card-text">Curated collection of essential books for learning coding and web development.</p>
-                            
-                            <h5 class="mt-4 mb-3">Available Topics:</h5>
-                            <ul class="product-features">
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> HTML, CSS & JavaScript</li>
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> React & Vue.js</li>
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> Node.js & Backend Development</li>
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> Python Programming</li>
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> Web Design & UX</li>
-                                <li><i class="bi bi-bookmark-fill text-warning"></i> Algorithms & Data Structures</li>
-                            </ul>
-                            
-                            <div class="pricing mt-4">
-                                <h4 class="text-primary">$15 - $60</h4>
-                                <p class="text-muted">Per book (physical or eBook)</p>
+                            <h5 class="card-title">HTML & CSS: Design and Build Websites</h5>
+                            <p class="card-text text-muted small">by Jon Duckett</p>
+                            <p class="text-muted small mb-3">Learn HTML5 and CSS3 with this beautifully designed full-color guide.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$29.99</span>
+                                    <span class="text-muted"><s>$39.99</s></span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('HTML & CSS Book', 29.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
                             </div>
-                            
-                            <a href="contact.html?product=books" class="btn btn-primary w-100 mt-3">Browse Books</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Computers -->
-                <div class="col-md-6">
-                    <div class="card h-100 product-card">
-                        <div class="card-body p-4">
-                            <div class="product-icon mb-3">
-                                <i class="bi bi-laptop text-primary" style="font-size: 3rem;"></i>
+                <!-- Product 2: JavaScript Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="product-badge bg-success">New</div>
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="JavaScript Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-half-o text-warning"></i>
+                                <span class="text-muted ms-2">(189)</span>
                             </div>
-                            <h3 class="card-title mb-3">Development Computers</h3>
-                            <p class="card-text">Pre-configured computers optimized for coding and web development work.</p>
-                            
-                            <h5 class="mt-4 mb-3">Configurations:</h5>
-                            <ul class="product-features">
-                                <li><i class="bi bi-pc-display text-info"></i> Entry Level: i5, 8GB RAM, 256GB SSD</li>
-                                <li><i class="bi bi-pc-display text-info"></i> Mid Range: i7, 16GB RAM, 512GB SSD</li>
-                                <li><i class="bi bi-pc-display text-info"></i> Pro Level: i9, 32GB RAM, 1TB SSD</li>
-                                <li><i class="bi bi-pc-display text-info"></i> Pre-installed Dev Tools</li>
-                                <li><i class="bi bi-pc-display text-info"></i> 1 Year Warranty</li>
-                                <li><i class="bi bi-pc-display text-info"></i> Free Setup & Configuration</li>
-                            </ul>
-                            
-                            <div class="pricing mt-4">
-                                <h4 class="text-primary">$600 - $2,500</h4>
-                                <p class="text-muted">Based on configuration</p>
+                            <h5 class="card-title">JavaScript: The Definitive Guide</h5>
+                            <p class="card-text text-muted small">by David Flanagan</p>
+                            <p class="text-muted small mb-3">Master JavaScript with comprehensive examples and detailed explanations.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$45.00</span>
+                                    <span class="badge bg-danger">25% OFF</span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('JavaScript Book', 45.00)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
                             </div>
-                            
-                            <a href="contact.html?product=computers" class="btn btn-primary w-100 mt-3">View Options</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: React Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="React Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-o text-warning"></i>
+                                <span class="text-muted ms-2">(156)</span>
+                            </div>
+                            <h5 class="card-title">Learning React: Modern Patterns</h5>
+                            <p class="card-text text-muted small">by Alex Banks & Eve Porcello</p>
+                            <p class="text-muted small mb-3">Build dynamic web applications with React hooks and modern patterns.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$38.99</span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('React Book', 38.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Python Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="Python Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <span class="text-muted ms-2">(312)</span>
+                            </div>
+                            <h5 class="card-title">Python Crash Course</h5>
+                            <p class="card-text text-muted small">by Eric Matthes</p>
+                            <p class="text-muted small mb-3">A hands-on, project-based introduction to programming in Python.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$32.50</span>
+                                    <span class="text-muted"><s>$44.99</s></span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('Python Book', 32.50)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Node.js Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="product-badge bg-info">Popular</div>
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="Node.js Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-half-o text-warning"></i>
+                                <span class="text-muted ms-2">(203)</span>
+                            </div>
+                            <h5 class="card-title">Node.js Design Patterns</h5>
+                            <p class="card-text text-muted small">by Mario Casciaro</p>
+                            <p class="text-muted small mb-3">Master best practices and design patterns for Node.js development.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$42.00</span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('Node.js Book', 42.00)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Web Design Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="Web Design Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-o text-warning"></i>
+                                <span class="text-muted ms-2">(178)</span>
+                            </div>
+                            <h5 class="card-title">Don't Make Me Think</h5>
+                            <p class="card-text text-muted small">by Steve Krug</p>
+                            <p class="text-muted small mb-3">A common sense approach to web and mobile usability.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$26.99</span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('Web Design Book', 26.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Git Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="Git Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <span class="text-muted ms-2">(267)</span>
+                            </div>
+                            <h5 class="card-title">Pro Git (2nd Edition)</h5>
+                            <p class="card-text text-muted small">by Scott Chacon</p>
+                            <p class="text-muted small mb-3">Everything you need to know about Git version control system.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$24.99</span>
+                                    <span class="badge bg-success">FREE eBook</span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('Git Book', 24.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Algorithms Book -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="card product-card h-100">
+                        <div class="product-badge bg-warning text-dark">Hot Deal</div>
+                        <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&h=500&fit=crop" 
+                             class="card-img-top" alt="Algorithms Book">
+                        <div class="card-body d-flex flex-column">
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-half-o text-warning"></i>
+                                <span class="text-muted ms-2">(341)</span>
+                            </div>
+                            <h5 class="card-title">Grokking Algorithms</h5>
+                            <p class="card-text text-muted small">by Aditya Bhargava</p>
+                            <p class="text-muted small mb-3">An illustrated guide for programmers and curious learners.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h4 mb-0 text-primary">$34.99</span>
+                                    <span class="text-muted"><s>$49.99</s></span>
+                                </div>
+                                <button class="btn btn-primary w-100" onclick="addToCart('Algorithms Book', 34.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,37 +404,187 @@
         </div>
     </section>
 
+    <!-- E-COMMERCE: DEVELOPMENT HARDWARE -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-3">💻 Development Hardware</h2>
+                <p class="lead text-muted">Pre-configured computers and accessories for developers</p>
+            </div>
+
+            <div class="row g-4">
+                
+                <!-- Hardware 1: Laptop Entry Level -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-badge bg-success">Best Value</div>
+                        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=400&fit=crop" 
+                             class="card-img-top" alt="Entry Level Laptop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Developer Laptop - Entry Level</h5>
+                            <p class="card-text text-muted small mb-3">Perfect for beginners and students</p>
+                            
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Intel Core i5 11th Gen</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 8GB RAM</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 256GB SSD</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 15.6" Full HD Display</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Pre-installed: VS Code, Git, Node.js</li>
+                            </ul>
+
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star-o text-warning"></i>
+                                <span class="text-muted ms-2">(89)</span>
+                            </div>
+
+                            <div class="mt-auto">
+                                <div class="mb-3">
+                                    <span class="h3 mb-0 text-primary">$649.99</span>
+                                    <p class="text-muted small mb-0">Free shipping • 1 Year Warranty</p>
+                                </div>
+                                <button class="btn btn-primary w-100 mb-2" onclick="addToCart('Entry Level Laptop', 649.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline-primary w-100" onclick="viewDetails('laptop-entry')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware 2: Laptop Mid Range -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100 border-primary">
+                        <div class="product-badge">Most Popular</div>
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=400&fit=crop" 
+                             class="card-img-top" alt="Mid Range Laptop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Developer Laptop - Pro</h5>
+                            <p class="card-text text-muted small mb-3">For professional developers</p>
+                            
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Intel Core i7 12th Gen</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 16GB RAM</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 512GB NVMe SSD</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 15.6" 4K Display</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Full Dev Stack Pre-installed</li>
+                            </ul>
+
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <span class="text-muted ms-2">(234)</span>
+                            </div>
+
+                            <div class="mt-auto">
+                                <div class="mb-3">
+                                    <span class="h3 mb-0 text-primary">$1,299.99</span>
+                                    <span class="badge bg-danger ms-2">Save $200</span>
+                                    <p class="text-muted small mb-0">Free shipping • 2 Year Warranty</p>
+                                </div>
+                                <button class="btn btn-primary w-100 mb-2" onclick="addToCart('Pro Laptop', 1299.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline-primary w-100" onclick="viewDetails('laptop-pro')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware 3: Laptop High End -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card product-card h-100">
+                        <div class="product-badge bg-dark">Premium</div>
+                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&h=400&fit=crop" 
+                             class="card-img-top" alt="High End Laptop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Developer Workstation - Elite</h5>
+                            <p class="card-text text-muted small mb-3">Maximum performance for serious developers</p>
+                            
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Intel Core i9 13th Gen</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 32GB RAM</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 1TB NVMe SSD</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> 17" 4K OLED Display</li>
+                                <li><i class="bi bi-check-circle-fill text-success"></i> Complete Dev Suite + GPU</li>
+                            </ul>
+
+                            <div class="product-rating mb-2">
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <i class="fa fa-star text-warning"></i>
+                                <span class="text-muted ms-2">(156)</span>
+                            </div>
+
+                            <div class="mt-auto">
+                                <div class="mb-3">
+                                    <span class="h3 mb-0 text-primary">$2,499.99</span>
+                                    <p class="text-muted small mb-0">Free shipping • 3 Year Warranty • Priority Support</p>
+                                </div>
+                                <button class="btn btn-primary w-100 mb-2" onclick="addToCart('Elite Workstation', 2499.99)">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline-primary w-100" onclick="viewDetails('laptop-elite')">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Floating Button -->
+    <div class="cart-float" onclick="viewCart()">
+        <i class="bi bi-cart3"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+
     <!-- Why Choose Us Section -->
     <section class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Why Choose Bi Dev?</h2>
+            <h2 class="text-center mb-5">Why Shop With Bi Dev?</h2>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="text-center">
-                        <i class="bi bi-award text-primary" style="font-size: 3rem;"></i>
-                        <h5 class="mt-3">Quality Assured</h5>
-                        <p>High-quality work with attention to detail</p>
+                        <i class="bi bi-truck text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">Free Shipping</h5>
+                        <p>On all orders over $50</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
-                        <i class="bi bi-clock-history text-primary" style="font-size: 3rem;"></i>
-                        <h5 class="mt-3">Timely Delivery</h5>
-                        <p>Projects completed on time, every time</p>
+                        <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">Secure Payment</h5>
+                        <p>100% secure transactions</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="bi bi-arrow-repeat text-primary" style="font-size: 3rem;"></i>
+                        <h5 class="mt-3">30-Day Returns</h5>
+                        <p>Money-back guarantee</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
                         <i class="bi bi-headset text-primary" style="font-size: 3rem;"></i>
                         <h5 class="mt-3">24/7 Support</h5>
-                        <p>Always here to help with your questions</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="text-center">
-                        <i class="bi bi-shield-check text-primary" style="font-size: 3rem;"></i>
-                        <h5 class="mt-3">Satisfaction Guaranteed</h5>
-                        <p>Money-back guarantee if not satisfied</p>
+                        <p>Always here to help</p>
                     </div>
                 </div>
             </div>
@@ -306,12 +641,56 @@
         </div>
     </div>
 
-    <!-- Cookie Consent JavaScript -->
+    <!-- E-Commerce JavaScript -->
     <script>
+        // Shopping Cart
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartCount() {
+            document.getElementById('cartCount').textContent = cart.length;
+        }
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            
+            // Show notification
+            alert(`✅ ${productName} added to cart!\nPrice: $${price.toFixed(2)}`);
+        }
+
+        function viewCart() {
+            if (cart.length === 0) {
+                alert('🛒 Your cart is empty!');
+                return;
+            }
+            
+            let cartSummary = '🛒 Shopping Cart\n\n';
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                cartSummary += `${index + 1}. ${item.name} - $${item.price.toFixed(2)}\n`;
+                total += item.price;
+            });
+            
+            cartSummary += `\n💰 Total: $${total.toFixed(2)}`;
+            cartSummary += '\n\nProceed to checkout?';
+            
+            if (confirm(cartSummary)) {
+                window.location.href = 'contact.html?checkout=true';
+            }
+        }
+
+        function viewDetails(productId) {
+            alert(`📋 Product details for ${productId} would appear here.\n\nThis would typically open a detailed product page.`);
+        }
+
+        // Cookie Consent
         window.addEventListener('load', function() {
             if (!localStorage.getItem('cookieConsent')) {
                 document.getElementById('cookieConsent').style.display = 'block';
             }
+            updateCartCount();
         });
 
         function acceptCookies() {
